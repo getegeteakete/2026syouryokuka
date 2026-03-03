@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中小企業省力化投資補助金（一般型）完全ガイド｜最大1億円の補助金でAI・DXを実現</title>
+<meta name="description" content="中小企業省力化投資補助金（一般型）を活用して、AIやDXによるオーダーメイドシステムを導入しませんか？補助金の仕組みから申請のポイントまで、プロがわかりやすく解説します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;900&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0a1628;
+  --navy-mid: #132240;
+  --navy-light: #1a3058;
+  --blue: #2563eb;
+  --blue-light: #3b82f6;
+  --gold: #d4a853;
+  --gold-light: #e8c87a;
+  --gold-pale: #fdf6e3;
+  --white: #ffffff;
+  --off-white: #f8f9fc;
+  --gray-50: #f1f3f8;
+  --gray-100: #e2e6ef;
+  --gray-200: #c5cad8;
+  --gray-400: #8891a5;
+  --gray-600: #4a5568;
+  --gray-800: #1a202c;
+  --red-accent: #dc2626;
+  --green-accent: #059669;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 1px 3px rgba(10,22,40,0.06);
+  --shadow-md: 0 4px 20px rgba(10,22,40,0.08);
+  --shadow-lg: 0 12px 40px rgba(10,22,40,0.12);
+  --shadow-xl: 0 24px 60px rgba(10,22,40,0.16);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--gray-800);
+  background: var(--white);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, var(--navy-light) 100%);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(212,168,83,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: heroGlow 8s ease-in-out infinite alternate;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: heroGlow 10s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes heroGlow {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.2) translate(20px, -20px); }
+}
+
+/* Grid pattern overlay */
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 120px 32px 80px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(212,168,83,0.12);
+  border: 1px solid rgba(212,168,83,0.3);
+  color: var(--gold-light);
+  padding: 8px 20px;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  margin-bottom: 32px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-badge::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.hero h1 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.4;
+  margin-bottom: 12px;
+  animation: fadeInUp 0.8s ease-out 0.1s both;
+}
+
+.hero h1 .gold {
+  color: var(--gold);
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: rgba(255,255,255,0.7);
+  font-weight: 300;
+  max-width: 700px;
+  margin-bottom: 48px;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.hero-stat {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius);
+  padding: 24px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.hero-stat:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(212,168,83,0.3);
+  transform: translateY(-4px);
+}
+
+.hero-stat-value {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1.2;
+}
+
+.hero-stat-label {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  margin-top: 4px;
+}
+
+/* ===== COMMON ===== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 16px;
+}
+
+.section-label::before {
+  content: '';
+  width: 32px;
+  height: 2px;
+  background: var(--blue);
+}
+
+.section-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.section-desc {
+  font-size: 1rem;
+  color: var(--gray-600);
+  max-width: 680px;
+  margin-bottom: 48px;
+}
+
+/* ===== ABOUT ===== */
+.about {
+  background: var(--off-white);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  color: var(--gray-600);
+  font-size: 0.95rem;
+}
+
+.about-text strong {
+  color: var(--navy);
+}
+
+.about-highlight {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--gold);
+}
+
+.about-highlight h3 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.15rem;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+.about-highlight ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-highlight li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.92rem;
+  color: var(--gray-600);
+}
+
+.about-highlight li::before {
+  content: '✓';
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background: rgba(5,150,105,0.1);
+  color: var(--green-accent);
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+/* ===== TABLE ===== */
+.subsidy-table-section {
+  background: var(--white);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 28px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+thead {
+  background: var(--navy);
+}
+
+th {
+  padding: 18px 24px;
+  text-align: center;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.88rem;
+  letter-spacing: 0.03em;
+}
+
+th:first-child {
+  border-radius: var(--radius-lg) 0 0 0;
+}
+
+th:last-child {
+  border-radius: 0 var(--radius-lg) 0 0;
+}
+
+td {
+  padding: 18px 24px;
+  text-align: center;
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 0.92rem;
+}
+
+tbody tr {
+  transition: background 0.2s ease;
+}
+
+tbody tr:hover {
+  background: var(--gold-pale);
+}
+
+tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 var(--radius-lg);
+}
+
+tbody tr:last-child td:last-child {
+  border-radius: 0 0 var(--radius-lg) 0;
+}
+
+td:first-child {
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.amount-highlight {
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.table-note {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+  line-height: 1.7;
+}
+
+/* ===== RATE EXPLANATION ===== */
+.rate-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.rate-card {
+  background: var(--off-white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  border: 1px solid var(--gray-100);
+  transition: all 0.3s ease;
+}
+
+.rate-card:hover {
+  border-color: var(--gold);
+  box-shadow: var(--shadow-md);
+}
+
+.rate-card h4 {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.rate-card .rate-value {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.rate-card .rate-value span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--gray-400);
+}
+
+.rate-card p {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+}
+
+/* ===== REQUIREMENTS ===== */
+.requirements {
+  background: var(--off-white);
+}
+
+.req-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.req-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-100);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.req-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.req-card::before {
+  content: attr(data-num);
+  position: absolute;
+  top: -8px;
+  right: 16px;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 5rem;
+  font-weight: 900;
+  color: rgba(37,99,235,0.04);
+  line-height: 1;
+}
+
+.req-icon {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--blue), var(--blue-light));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+}
+
+.req-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.req-card p {
+  font-size: 0.88rem;
+  color: var(--gray-600);
+}
+
+/* ===== FLOW ===== */
+.flow-section {
+  background: var(--white);
+}
+
+.flow-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flow-timeline::before {
+  content: '';
+  position: absolute;
+  left: 28px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--blue), var(--gold));
+}
+
+.flow-step {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.flow-step:last-child {
+  margin-bottom: 0;
+}
+
+.flow-dot {
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  background: var(--white);
+  border: 3px solid var(--blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--blue);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.flow-step:hover .flow-dot {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.flow-body {
+  background: var(--off-white);
+  border-radius: var(--radius);
+  padding: 28px;
+  flex: 1;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.flow-step:hover .flow-body {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-md);
+}
+
+.flow-body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.flow-body p {
+  font-size: 0.88rem;
+  color: var(--gray-600);
+}
+
+/* ===== WARNINGS ===== */
+.warnings {
+  background: var(--navy);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.warnings::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(220,38,38,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.warnings .section-label {
+  color: var(--gold);
+}
+
+.warnings .section-label::before {
+  background: var(--gold);
+}
+
+.warnings .section-title {
+  color: var(--white);
+}
+
+.warnings .section-desc {
+  color: rgba(255,255,255,0.6);
+}
+
+.warning-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.warning-item {
+  display: flex;
+  gap: 20px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+}
+
+.warning-item:hover {
+  background: rgba(220,38,38,0.06);
+  border-color: rgba(220,38,38,0.2);
+}
+
+.warning-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: rgba(220,38,38,0.15);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.warning-item h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.warning-item p {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+}
+
+/* ===== BONUS POINTS ===== */
+.bonus {
+  background: var(--off-white);
+}
+
+.bonus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.bonus-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 28px;
+  border: 1px solid var(--gray-100);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.bonus-card:hover {
+  border-color: var(--gold);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.bonus-card .emoji {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.bonus-card h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.bonus-card p {
+  font-size: 0.82rem;
+  color: var(--gray-400);
+}
+
+.bonus-card .difficulty {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.diff-easy {
+  background: rgba(5,150,105,0.1);
+  color: var(--green-accent);
+}
+
+.diff-medium {
+  background: rgba(212,168,83,0.15);
+  color: var(--gold);
+}
+
+/* ===== CTA ===== */
+.cta-section {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(212,168,83,0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(37,99,235,0.06) 0%, transparent 50%);
+}
+
+.cta-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-section h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.cta-section p {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--navy);
+  padding: 18px 40px;
+  border-radius: 100px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 24px rgba(212,168,83,0.3);
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(212,168,83,0.4);
+}
+
+.cta-btn::after {
+  content: '→';
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.cta-btn:hover::after {
+  transform: translateX(4px);
+}
+
+.cta-sub {
+  margin-top: 20px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.4);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--gray-800);
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: var(--gray-400);
+}
+
+footer a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+/* ===== SCROLL ANIMATIONS ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  section { padding: 64px 0; }
+  .container { padding: 0 20px; }
+  .hero-content { padding: 100px 20px 60px; }
+  .hero-stats { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .hero-stat { padding: 18px; }
+  .hero-stat-value { font-size: 1.4rem; }
+  .about-grid { grid-template-columns: 1fr; }
+  .rate-cards { grid-template-columns: 1fr; }
+  .req-grid { grid-template-columns: 1fr; }
+  .flow-timeline::before { left: 20px; }
+  .flow-dot { width: 42px; height: 42px; font-size: 0.9rem; }
+  .flow-step { gap: 18px; }
+  .bonus-grid { grid-template-columns: 1fr 1fr; }
+  th, td { padding: 12px 14px; font-size: 0.82rem; }
+}
+
+@media (max-width: 480px) {
+  .hero-stats { grid-template-columns: 1fr; }
+  .bonus-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">2026年度 第6回公募対応</div>
+    <h1>
+      AI・DXで人手不足を解決。<br>
+      <span class="gold">最大1億円</span>の補助金を活用しませんか？
+    </h1>
+    <p class="hero-sub">
+      中小企業省力化投資補助金（一般型）は、御社の業務に合わせた「オーダーメイドシステム」の開発・導入費用を、国が最大2/3まで支援する制度です。
+    </p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-value">最大1億円</div>
+        <div class="hero-stat-label">補助上限額（賃上げ特例時）</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">最大2/3</div>
+        <div class="hero-stat-label">補助率（小規模事業者）</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">ソフト単体OK</div>
+        <div class="hero-stat-label">ハードウェア不要で申請可能</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">ABOUT</div>
+      <div class="section-title">この補助金は「御社専用のシステム」を<br>つくるための制度です</div>
+    </div>
+    <div class="about-grid fade-in">
+      <div class="about-text">
+        <p>
+          中小企業省力化投資補助金（一般型）は、既製品の導入（カタログ注文型）ではカバーしきれない、<strong>企業ごとの固有の課題を解決するオーダーメイドシステム</strong>の構築を支援する国の補助金制度です。
+        </p>
+        <p>
+          ICT・IoT・AI・ロボット等のデジタル技術を活用し、御社の業務プロセスに合わせて専用設計されたシステムであれば、<strong>ソフトウェア単体でも申請が可能</strong>です。
+        </p>
+        <p>
+          たとえば、AI を活用した受発注の自動化、在庫管理の最適化、顧客対応の省力化など、「今まで人が時間をかけてやっていた業務」をシステムに置き換える投資が対象になります。
+        </p>
+      </div>
+      <div class="about-highlight">
+        <h3>こんなシステム開発が対象です</h3>
+        <ul>
+          <li>AIを活用した業務自動化システムの構築</li>
+          <li>受発注・在庫管理のオーダーメイドシステム</li>
+          <li>ロボットやIoTセンサーを活用した生産ライン最適化</li>
+          <li>複数の汎用設備を組み合わせた高度な省力化ソリューション</li>
+          <li>データ統合・分析による意思決定支援システム</li>
+          <li>顧客対応のAIエージェント・チャットボット構築</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SUBSIDY TABLE ===== -->
+<section class="subsidy-table-section">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">SUBSIDY AMOUNT</div>
+      <div class="section-title">従業員規模に応じた補助上限額</div>
+      <div class="section-desc">
+        御社の従業員数に応じて補助上限額が決まります。さらに、大幅な賃上げに取り組む場合は上限額が引き上げられます。
+      </div>
+    </div>
+    <div class="table-wrapper fade-in">
+      <table>
+        <thead>
+          <tr>
+            <th>従業員数</th>
+            <th>補助上限額（通常）</th>
+            <th>賃上げ特例適用時</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5人以下</td>
+            <td>750万円</td>
+            <td class="amount-highlight">1,000万円</td>
+          </tr>
+          <tr>
+            <td>6〜20人</td>
+            <td>1,500万円</td>
+            <td class="amount-highlight">2,000万円</td>
+          </tr>
+          <tr>
+            <td>21〜50人</td>
+            <td>3,000万円</td>
+            <td class="amount-highlight">4,000万円</td>
+          </tr>
+          <tr>
+            <td>51〜100人</td>
+            <td>5,000万円</td>
+            <td class="amount-highlight">6,500万円</td>
+          </tr>
+          <tr>
+            <td>101人以上</td>
+            <td>8,000万円</td>
+            <td class="amount-highlight">1億円</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note fade-in">
+      ※ 賃上げ特例の適用には、給与支給総額の年平均成長率+6.0%以上、事業場内最低賃金を地域最低賃金+50円以上とする等の追加要件があります。
+    </p>
+
+    <div class="rate-cards fade-in">
+      <div class="rate-card">
+        <h4>補助額 1,500万円以下の部分</h4>
+        <div class="rate-value">1/2 <span>（小規模事業者は 2/3）</span></div>
+        <p>投資額の半額〜最大2/3が補助されます。たとえば1,000万円の投資なら、500〜667万円が補助金として交付されます。</p>
+      </div>
+      <div class="rate-card">
+        <h4>補助額 1,500万円超の部分</h4>
+        <div class="rate-value">1/3</div>
+        <p>大型投資の場合、1,500万円を超える部分は一律1/3の補助率が適用されます。投資規模が大きいほど自己負担比率が上がる仕組みです。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REQUIREMENTS ===== -->
+<section class="requirements">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">REQUIREMENTS</div>
+      <div class="section-title">採択に必要な5つの基本要件</div>
+      <div class="section-desc">
+        申請にあたっては、以下の要件をすべて満たす3〜5年の事業計画を策定する必要があります。
+      </div>
+    </div>
+    <div class="req-grid fade-in">
+      <div class="req-card" data-num="01">
+        <div class="req-icon">📈</div>
+        <h3>労働生産性 年平均+4.0%以上</h3>
+        <p>付加価値額（営業利益＋人件費＋減価償却費）÷ 従業員数で算出。システム導入によりどれだけ生産性が上がるかを具体的に示します。</p>
+      </div>
+      <div class="req-card" data-num="02">
+        <div class="req-icon">💰</div>
+        <h3>1人当たり給与支給総額 年平均+3.5%以上</h3>
+        <p>従業員への賃上げ計画が必須です。省力化による利益を従業員に還元する姿勢が求められます。</p>
+      </div>
+      <div class="req-card" data-num="03">
+        <div class="req-icon">⏱</div>
+        <h3>省力化指数の算定</h3>
+        <p>導入するシステムにより「どの業務が」「何時間削減されるか」を定量的に計算し、削減率を示します。</p>
+      </div>
+      <div class="req-card" data-num="04">
+        <div class="req-icon">💡</div>
+        <h3>投資回収期間の明示</h3>
+        <p>投資した金額がどのくらいの期間で回収できるか、根拠資料とともに提出する必要があります。</p>
+      </div>
+      <div class="req-card" data-num="05">
+        <div class="req-icon">🏢</div>
+        <h3>事業場内最低賃金の水準</h3>
+        <p>補助事業を実施する事業場の最低賃金が、地域別最低賃金＋30円以上であることが求められます。</p>
+      </div>
+      <div class="req-card" data-num="06">
+        <div class="req-icon">📋</div>
+        <h3>付加価値額の増加計画</h3>
+        <p>3〜5年の事業計画期間内に、設備投資前と比較して付加価値額が増加する計画を策定します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FLOW ===== -->
+<section class="flow-section">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">APPLICATION FLOW</div>
+      <div class="section-title">申請から補助金交付までの流れ</div>
+      <div class="section-desc">
+        事前準備から補助金の受取りまで、主要なステップをご紹介します。
+      </div>
+    </div>
+    <div class="flow-timeline fade-in">
+      <div class="flow-step">
+        <div class="flow-dot">0</div>
+        <div class="flow-body">
+          <h3>事前準備</h3>
+          <p>GビズIDプライムアカウントの取得（発行に約2週間）、開発パートナーの選定、業務課題の棚卸しとROI算定を行います。<strong>公募開始前に完了させましょう。</strong></p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-dot">1</div>
+        <div class="flow-body">
+          <h3>公募開始・応募申請</h3>
+          <p>Jグランツ（電子申請システム）にて事業計画書・経費明細・各種添付書類を提出。50万円以上の契約先は原則2社以上の相見積もりが必要です。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-dot">2</div>
+        <div class="flow-body">
+          <h3>審査（書面審査・口頭審査）</h3>
+          <p>約3ヶ月の審査を経て、採択・交付決定が通知されます。一部の事業者にはオンラインによる口頭審査が実施される場合があります。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-dot">3</div>
+        <div class="flow-body">
+          <h3>交付決定・事業実施</h3>
+          <p>交付決定を受けた後に、発注・契約・開発をスタートします。交付決定日から最長18ヶ月以内に事業を完了させます。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-dot">4</div>
+        <div class="flow-body">
+          <h3>実績報告・確定検査</h3>
+          <p>開発完了・支払い後に、請求書・振込明細等の証憑を添えて事務局へ実績報告。審査を経て補助金額が確定します。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-dot">5</div>
+        <div class="flow-body">
+          <h3>補助金交付・効果報告</h3>
+          <p>確定した補助金が入金されます。その後5年間、労働生産性の推移について効果報告を行う義務があります。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WARNINGS ===== -->
+<section class="warnings">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">IMPORTANT NOTICE</div>
+      <div class="section-title">必ず押さえておきたい注意点</div>
+      <div class="section-desc">
+        補助金の申請・実施にあたっては、以下のルールを厳守する必要があります。違反した場合は採択取消・補助金返還のリスクがあります。
+      </div>
+    </div>
+    <div class="warning-list fade-in">
+      <div class="warning-item">
+        <div class="warning-icon">🚫</div>
+        <div>
+          <h4>交付決定前の着手は絶対NG</h4>
+          <p>いかなる理由があっても、交付決定通知を受ける前に発注・契約・開発を開始することはできません。事前着手の制度はこの補助金にはありません。</p>
+        </div>
+      </div>
+      <div class="warning-item">
+        <div class="warning-icon">📄</div>
+        <div>
+          <h4>「一式見積」は認められない</h4>
+          <p>「システム開発一式」のような見積書は不可です。設計費・構築費・導入設定費など、積算根拠が明確な内訳と仕様書の提出が必要です。</p>
+        </div>
+      </div>
+      <div class="warning-item">
+        <div class="warning-icon">💳</div>
+        <div>
+          <h4>支払いは銀行振込が原則</h4>
+          <p>すべての経費は銀行振込で支払い、振込受領書を保管してください。現金払いやクレジットカード決済は原則として認められません。</p>
+        </div>
+      </div>
+      <div class="warning-item">
+        <div class="warning-icon">📊</div>
+        <div>
+          <h4>外注費は経費総額の1/2まで</h4>
+          <p>外部の開発会社に委託する費用は「外注費」として計上されますが、補助対象経費総額（税抜き）の2分の1が上限です。</p>
+        </div>
+      </div>
+      <div class="warning-item">
+        <div class="warning-icon">📝</div>
+        <div>
+          <h4>5年間の効果報告が義務</h4>
+          <p>補助金を受けた後、毎年4月に労働生産性等の報告義務があります。目標未達の場合は補助金の一部返還が求められる可能性があります。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BONUS POINTS ===== -->
+<section class="bonus">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">BONUS POINTS</div>
+      <div class="section-title">加点項目で採択率アップ</div>
+      <div class="section-desc">
+        以下の取り組みを行っている事業者には、審査時に加点が付与されます。取得しやすいものから優先的に準備しましょう。
+      </div>
+    </div>
+    <div class="bonus-grid fade-in">
+      <div class="bonus-card">
+        <span class="emoji">🛡</span>
+        <h4>事業継続力強化計画<br>（BCP認定）</h4>
+        <p>中小企業庁の認定制度。防災・事業継続に関する計画を策定します。</p>
+        <span class="difficulty diff-easy">取得しやすい</span>
+      </div>
+      <div class="bonus-card">
+        <span class="emoji">🤝</span>
+        <h4>成長加速<br>マッチングサービス</h4>
+        <p>無料の会員登録と挑戦課題の登録だけで加点対象になります。</p>
+        <span class="difficulty diff-easy">取得しやすい</span>
+      </div>
+      <div class="bonus-card">
+        <span class="emoji">💰</span>
+        <h4>地域別最低賃金<br>引き上げ</h4>
+        <p>最低賃金以上〜改定後未満の従業員が30%以上、3ヶ月以上ある場合。</p>
+        <span class="difficulty diff-medium">条件次第</span>
+      </div>
+      <div class="bonus-card">
+        <span class="emoji">👩‍💼</span>
+        <h4>えるぼし認定<br>くるみん認定</h4>
+        <p>女性活躍推進法・次世代育成支援法に基づく認定を受けている場合。</p>
+        <span class="difficulty diff-medium">条件次第</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner fade-in">
+      <h2>
+        補助金を活用した<br>
+        オーダーメイドシステム開発、<br>
+        まずはご相談ください。
+      </h2>
+      <p>
+        「自社の業務は補助金の対象になる？」「どれくらいの補助金がもらえる？」<br>
+        そんな疑問に、経験豊富なスタッフが無料でお答えします。
+      </p>
+      <a href="#" class="cta-btn">無料相談を予約する</a>
+      <p class="cta-sub">※ 相談は無料です。補助金申請を強制するものではありません。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <p>
+      ※ 本ページの内容は、第5回公募要領及び公式情報に基づいて作成しています。最新情報は
+      <a href="https://shoryokuka.smrj.go.jp/ippan/" target="_blank" rel="noopener">公式サイト</a>
+      をご確認ください。
+    </p>
+    <p style="margin-top: 12px;">
+      お問い合わせ先：中小企業省力化投資補助金事務局 コールセンター<br>
+      ナビダイヤル：0570-099-660 ／ IP電話：03-4335-7595（平日 9:30〜17:30）
+    </p>
+  </div>
+</footer>
+
+<!-- ===== SCROLL ANIMATION ===== -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+});
+</script>
+
+</body>
+</html>
